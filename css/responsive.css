@@ -1,0 +1,37 @@
+@media screen and (max-width: 425px){
+  main{
+    flex-direction: column;
+    height: 900px;
+  }
+  #content{
+    width: 90%;
+  }
+  #top{
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+  }
+  #right{
+    display: none;
+  }
+  #logo{
+    position: absolute;
+    top: 0;
+    height: 60px;
+  }
+  #logo img{
+    margin-top: 10px;
+  }
+  #title{
+    width: 100%;
+    text-align: center;
+  }
+  #info{
+    text-align: center;
+    margin: auto;
+  }
+  form{
+    width: 90%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,115 @@
+:root{
+  --desaturatered: hsl(0, 36%, 70%);
+  --red: hsl(0, 93%, 68%);
+  --darkred: hsl(0, 6%, 24%);
+  --gradient1: hsl(0, 0%, 100%);
+  --gradient2: hsl(0, 100%, 98%);
+  --gradient3: hsl(0, 80%, 86%);
+  --gradient4: hsl(0, 74%, 74%);
+}
+img{
+  display: block;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(135deg, var(--gradient1),var(--gradient2)); */
+  position: relative;
+  overflow: hidden;
+}
+#left{
+  background-image: url(../images/bg-pattern-desktop.svg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content{
+  width: 70%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#logo{
+  width: 100%;
+}
+#title{
+  width: 70%;
+  text-transform: uppercase;
+}
+#title span{
+  font-size: 60px;
+  font-weight: 300;
+  color: var(--desaturatered);
+}
+#title h1{
+  font-size: 60px;
+  font-weight: 500;
+}
+#info{
+  color: var(--desaturatered);
+  width: 85%;
+  font-weight: 400;
+}
+form{
+  width: 85%;
+  height: 80px;
+  position: relative;
+}
+#email{
+  outline: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid var(--desaturatered);
+  padding-left: 25px;
+}
+#button{
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--gradient3),var(--gradient4));
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+#button:hover{
+  box-shadow: 0px 3px 10px rgb(204, 204, 204);
+  background: linear-gradient(135deg, hsl(0, 89%, 93%),hsl(0, 60%, 81%));
+}
+#arrow{
+  position: absolute;
+  right: 30px;
+  top: 14px;
+}
+.active{
+  position: absolute;
+  right: 105px;
+  top: 14px;
+  display: none;
+}
+form p{
+  margin-left: 30px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--red);
+  display: none;
+}
+#top{
+  display: none;
+}
